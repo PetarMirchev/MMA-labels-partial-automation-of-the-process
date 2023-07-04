@@ -16,6 +16,7 @@ body{
     margin: 0;
     min-height: 100vh;
     flex-wrap: wrap;
+    background-color: black;
 }
 #main{   
     margin: 0 auto;
@@ -45,6 +46,8 @@ textarea{
     height: 20vh;
     resize: none;
     display: block;
+    background-color: rgb(214, 226, 247);
+    
 }
 
 #exercise div{
@@ -52,3 +55,10 @@ textarea{
 	width: 49%;
 }
 
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}

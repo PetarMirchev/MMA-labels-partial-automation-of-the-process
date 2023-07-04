@@ -274,7 +274,7 @@ function labelsMMA(){
     let resultBoxField = document.getElementById("result-box");
 
     let btnGenerate = document.getElementById("btn-generate");
-
+    let btnReset = document.getElementById("btn-reset");
 
 
     btnGenerate.addEventListener("click", function addGenerate(e) {
@@ -292,7 +292,7 @@ function labelsMMA(){
         }
 
 
-        let index1 = 0
+        let index1 = 0;
 
         for (let index = 0; index < data.length; index += 3) {
             let text1_100 = data[index];  // TEXT (1/100 mm)
@@ -315,12 +315,22 @@ function labelsMMA(){
             // console.log(text2_Coordinates);
             // console.log(editTextNumbers);
             index1++;
-            debugger
+            //debugger
         }
 //https://stackoverflow.com/questions/38528384/how-to-setup-visual-studio-code-to-detect-and-set-the-correct-encoding-on-file-o
 //! Enter 'autoGuessEncoding' and make sure checkbox is checked
-        resultBoxField.textContent = printBufferArray.join("\n");
+        resultBoxField.value = printBufferArray.join("\n");
 
+    });
+
+
+
+
+    // empty all boxes
+    btnReset.addEventListener('click', function duReset(e){
+        inputFieldAreaNumberA.value = "";
+        inputFieldNumber.value = "";
+        document.getElementById("result-box").value = "";
     });
 
 }
