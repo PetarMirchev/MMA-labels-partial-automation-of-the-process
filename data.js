@@ -304,6 +304,17 @@ function labelsMMA(){
             let splitPart2 = text3_A_numberPure.substring(21, 25);
             let splitPart3 = text3_A_numberPure.substring(26, 29);
 
+            // put empty line wen is not data put
+            if (inputNumberA[index1] === undefined){
+                inputNumberA[index1] = '';
+                splitPart2 = '';
+            }
+            if(inputNumberChar[index1] === undefined){
+                inputNumberChar[index1] = '';
+                splitPart2 = '';
+            }
+
+
             //SOH BM[10] + A1745400015 + :E00 + 1 + ERT
             let editTextNumbers = splitPart1 + inputNumberA[index1] + splitPart2 + inputNumberChar[index1] + splitPart3;
 
