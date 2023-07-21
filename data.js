@@ -305,11 +305,11 @@ function labelsMMA(){
             let splitPart3 = text3_A_numberPure.substring(26, 29);
 
             // put empty line wen is not data put
-            if (inputNumberA[index1] === undefined){
+            if (inputNumberA[index1] === undefined || inputNumberA[index1] === ''){
                 inputNumberA[index1] = '';
                 splitPart2 = '';
             }
-            if(inputNumberChar[index1] === undefined){
+            if(inputNumberChar[index1] === undefined || inputNumberChar[index1] === ''){
                 inputNumberChar[index1] = '';
                 splitPart2 = '';
             }
